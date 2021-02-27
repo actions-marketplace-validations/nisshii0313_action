@@ -44,7 +44,7 @@ Make sure to replace the value of `projectToken` with the project token provided
 ## Usage
 
 ```yaml
-- uses: chromaui/action@v2
+- uses: nisshii0313/action@v2
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
     projectToken: 'Your chromatic project token'
