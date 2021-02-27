@@ -29,7 +29,7 @@ jobs:
         run: yarn
         # 👇 Adds Chromatic as a step in the workflow
       - name: Publish to Chromatic
-        uses: chromaui/action@v1
+        uses: nisshii0313/action@v2
         # Chromatic GitHub Action options
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -44,7 +44,7 @@ Make sure to replace the value of `projectToken` with the project token provided
 ## Usage
 
 ```yaml
-- uses: chromaui/action@v1
+- uses: chromaui/action@v2
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
     projectToken: 'Your chromatic project token'
@@ -60,7 +60,7 @@ Make sure to replace the value of `projectToken` with the project token provided
 We suggest you use a secret to hide the project token:
 
 ```yaml
-- uses: chromaui/action@v1
+- uses: nisshii0313/action@v2
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
     projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
